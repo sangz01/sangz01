@@ -1,0 +1,43 @@
+.sliderwrapper {
+	OVERFLOW: hidden;
+	WIDTH: 440px;
+	POSITION: relative;
+	HEIGHT: 180px;
+	border: 10px solid #996633;
+	margin-top: -5px;
+}
+.sliderwrapper .contentdiv {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	BACKGROUND: white;
+
+FILTER: progid:DXImageTransform.Microsoft.alpha(opacity=100); 		LEFT: 0px;
+	VISIBILITY: hidden;
+	PADDING-BOTTOM: 5px;
+	WIDTH: 420px;
+	PADDING-TOP: 5px;
+	POSITION: absolute;
+	TOP: 0px;
+	HEIGHT: 100%;
+	moz-opacity: 1;
+	opacity: 1;
+	text-align: justify;
+}
+.pagination {
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-BOTTOM: 5px;
+	WIDTH: 440px;
+	PADDING-TOP: 5px;
+	BACKGROUND-COLOR: #CCCC66;
+	TEXT-ALIGN: right
+}
+.pagination A {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: white; PADDING-BOTTOM: 0px; COLOR: #00007d; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+.pagination A:hover {
+	COLOR: #000; BACKGROUND-COLOR: #fee496
+}
+.pagination A.selected {
+	COLOR: #000; BACKGROUND-COLOR: #fee496
+}

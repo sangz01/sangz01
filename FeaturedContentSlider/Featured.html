@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+#container {
+	background-color: #FCFCFE;
+	width: 950px;
+	margin: auto;
+}
+body {
+	text-align: center;
+}
+
+#header {
+	background-color: #FFC4C4;
+	height: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FF0000;
+}
+#footer {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #000000;
+	height: 60px;
+	clear: both;
+}
+#chuyenmuc td {
+	font-size: 18px;
+	background-image: url(hinhnen/banner.gif);
+	text-align: center;
+	height: 43px;
+	width: 182px;
+	margin-right: 50px;
+	color: #003366;
+	vertical-align: middle;
+}
+#chuyenmuc a:link, #chuyenmuc a:visited {
+	color: #003366;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+#chuyenmuc a:hover {
+	color: #00CCFF;
+	text-decoration: underline;
+}
+
+
+#menu {
+	background-color: #CCFFFF;
+	height: 25px;
+	color: #330099;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #246F00;
+	background-color: #C1FFBF;
+	text-align: justify;
+}
+#mainleft {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #003300;
+	background-color: #66FF66;
+	width: 200px;
+	float: left;
+}
+#mainright {
+	font-family: "Times New Roman", Times, serif;
+	color: #000066;
+	background-color: #6699CC;
+	float: right;
+	width: 200px;
+}
+#content {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #006600;
+	background-color: #DDFFEB;
+	text-align: justify;
+	margin-right: 200px;
+	margin-left: 200px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.tuabai {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: 200;
+	color: #003300;
+	margin-top: 0px;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="contentslider.css" />
+
+<script type="text/javascript" src="contentslider.js">
+
+/***********************************************
+* Featured Content Slider- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+</script>
+
+
+</head>
+
+<body>
+<div id="container">
+  <div id="header">Tin tức online</div>
+  <div id="menu">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" id="chuyenmuc">
+      <tr>
+        <td>Trang chủ</td>
+        <td>Tin tức</td>
+        <td>Diễn đàn</td>
+        <td><a href="http://www.google.com">Liên hệ</a></td>
+        <td>Giới thiệu</td>
+      </tr>
+    </table>
+   
+  </div>
+  <div id="main">
+    <div id="mainleft">menu con</div>
+    <div id="mainright">quang cao</div>
+    <div id="content">
+
+
+<h3>Example 1</h3>
+
+<!--Inner content DIVs should always carry "contentdiv" CSS class-->
+<!--Pagination DIV should always carry "paginate-SLIDERID" CSS class-->
+
+<div id="slider1" class="sliderwrapper">
+  <div class="contentdiv"> Content 1 Here. <br />
+    <p></p>
+    <a href="javascript:featuredcontentslider.jumpTo('slider1', 3)">Go to 3rd slide</a>
+    <p></p>
+  </div>
+  <div class="contentdiv"> Content 2 Here. </div>
+  <div class="contentdiv"> Content 3 Here. </div>
+</div>
+<div id="paginate-slider1" class="pagination">
+  
+</div>
+
+<script type="text/javascript">
+
+featuredcontentslider.init({
+	id: "slider1",  //id of main slider DIV
+	contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+	toc: "#increment",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+	nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+	revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+	enablefade: [true, 0.2],  //[true/false, fadedegree]
+	autorotate: [true, 3000],  //[true/false, pausetime]
+	onChange: function(previndex, curindex){  //event handler fired whenever script changes slide
+		//previndex holds index of last slide viewed b4 current (1=1st slide, 2nd=2nd etc)
+		//curindex holds index of currently shown slide (1=1st slide, 2nd=2nd etc)
+	}
+})
+
+</script>
+
+
+
+
+<br />
+<h3>Example 2, Pagination links from markup</h3>
+
+<!--Inner content DIVs should always carry "contentdiv" CSS class-->
+<!--Pagination DIV should always carry "paginate-SLIDERID" CSS class-->
+
+<div id="slider2" class="sliderwrapper">
+
+<div class="contentdiv" style="background-image:url(../../images/191025.JPG)" >
+
+</div>
+
+<div class="contentdiv" style="background-image:url(../../images/JJ000338.jpg)">
+</div>
+
+<div class="contentdiv" style="background-image:url(../../images/mientayp.jpg)">
+
+</div>
+
+</div>
+
+<div id="paginate-slider2" class="pagination">
+
+<a href="#" class="toc">First Page</a> 
+<a href="#" class="toc anotherclass">Second Page</a> 
+<a href="#" class="toc">Third Page</a> 
+<a href="#" class="prev" style="margin-left: 10px"><</a> 
+<a href="#" class="next">></a>
+
+</div>
+
+<script type="text/javascript">
+
+featuredcontentslider.init({
+	id: "slider2",  //id of main slider DIV
+	contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+	toc: "markup",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+	nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+	revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+	enablefade: [true, 0.2],  //[true/false, fadedegree]
+	autorotate: [false, 3000],  //[true/false, pausetime]
+	onChange: function(previndex, curindex){  //event handler fired whenever script changes slide
+		//previndex holds index of last slide viewed b4 current (1=1st slide, 2nd=2nd etc)
+		//curindex holds index of currently shown slide (1=1st slide, 2nd=2nd etc)
+	}
+})
+
+</script>
+
+<hr />
+<h3>Example 3, Pagination links created using HTML markup within pagination DIV. </h3>
+
+<!--Inner content DIVs should always carry "contentdiv" CSS class-->
+<!--Pagination DIV should always carry "paginate-SLIDERID" CSS class-->
+
+<div id="slider3" class="sliderwrapper">
+
+<div class="contentdiv" style="background-image:url(191025.JPG)" >
+
+</div>
+
+<div class="contentdiv" style="background-image:url(JJ000338.jpg)">
+</div>
+
+<div class="contentdiv" style="background-image:url(JJ000375.jpg)">
+
+</div>
+
+<div class="contentdiv" style="background-image:url(JJ000376.jpg)">
+
+</div>
+
+</div>
+
+<div id="paginate-slider3" class="pagination">
+
+<a href="#" class="toc" style="margin-left: 35px"><img width="70" src="thum_191025.JPG" border="0" /></a> 
+<a href="#" class="toc someclass"><img width="70"  src="thum_JJ000338.jpg" border="0" /></a> 
+<a href="#" class="toc someotheclass"><img width="70" src="thum_JJ000376.jpg" border="0" /></a> 
+<a href="#" class="toc someotheclass"><img width="70" src="thum_JJ000375.jpg" border="0" /></a> 
+</div>
+
+<script type="text/javascript">
+
+featuredcontentslider.init({
+	id: "slider3",  //id of main slider DIV
+	contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+	toc: "markup",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+	nextprev: ["", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+	revealtype: "mouseover", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+	enablefade: [true, 0.1],  //[true/false, fadedegree]
+	autorotate: [true, 3000],  //[true/false, pausetime]
+	onChange: function(previndex, curindex){  //event handler fired whenever script changes slide
+		//previndex holds index of last slide viewed b4 current (1=1st slide, 2nd=2nd etc)
+		//curindex holds index of currently shown slide (1=1st slide, 2nd=2nd etc)
+	}
+})
+
+</script>
+	
+      <p class="tuabai">SỐNG ĐẸP </p>
+      <p>Lòng nhân ái thật sự Một cơn bão vừa tàn phá thị trấn nhỏ gần thành phố của chúng tôi làm nhiều gia đình phải sống trong cảnh khốn khó.Tất cả các tờ báo địa phương đều đăng hình ảnh và những câu chuyện thương tâm về một số gia đình mất mát nhiều nhất. Có một bức ảnh làm tôi xúc động. Một phụ nữ trẻ đứng trước ngôi nhà đổ nát của mình, gương mặt hằn sâu nỗi đau đớn. Đứng cạnh bà là một... </p>
+      <p>Chuyện về hai hạt lúa Có hai hạt lúa nọ được giữ lại để làm hạt giống cho vụ sau vì cả hai đều là những hạt lúa tốt, đều to khỏe và chắc mẩy. Một hôm, người chủ định đem chúng gieo trên cánh đồng gần đó. Hạt thứ nhất nhủ thầm: Dại gì ta phải theo ông chủ ra đồng. Ta không muốn cả thân mình phải nát tan trong đất. Tốt nhất ta hãy giữ lại tất cả chất dinh dưỡng trong lớp vỏ này và tìm một nơi lý tưởng để trú ngụ... </p>
+      <p>Cái bẫy chuột Một con chuột nhìn qua vết nứt của vách tường và trông thấy một bác nông dân cùng với vợ đang mở một chiếc hộp. “Hẳn là có đồ ăn gì trong hộp?” - con chuột tự hỏi. Nhưng liền sau đó, nó hốt hoảng khi phát hiện ra đó lại là cái bẫy chuột. </p>
+    </div>
+    <p class="tuabai">&nbsp;</p>
+  </div>
+  <div id="footer">Content for  id "footer" Goes Here</div>
+</div>
+</body>
+</html>
